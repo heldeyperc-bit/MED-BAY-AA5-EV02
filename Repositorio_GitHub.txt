@@ -1,0 +1,27 @@
+﻿SERVICIO NACIONAL DE APRENDIZAJE - SENA
+
+Evidencia:
+GA7-220501096-AA5-EV02
+
+Nombre:
+API
+
+Proyecto:
+MED-BAY
+
+Descripción:
+Testing y documentación de la API de registro e inicio de sesión
+del proyecto MED-BAY utilizando Postman.
+
+Pruebas realizadas:
+- Registro correcto de usuario.
+- Validación de usuario duplicado.
+- Inicio de sesión con credenciales correctas.
+- Inicio de sesión con credenciales incorrectas.
+
+Endpoints:
+POST http://localhost:3000/api/registro
+POST http://localhost:3000/api/login
+
+Repositorio GitHub:
+https://github.com/heldeyperc-bit/MED-BAY-AA5-EV02.git
