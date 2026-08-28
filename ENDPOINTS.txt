@@ -1,0 +1,70 @@
+SERVICIO NACIONAL DE APRENDIZAJE - SENA
+
+Evidencia:
+GA7-220501096-AA5-EV02
+
+Nombre:
+API
+
+Proyecto:
+MED-BAY
+
+BASE URL:
+http://localhost:3000
+
+ENDPOINT 1 - REGISTRO DE USUARIO
+
+Método:
+POST
+
+URL:
+http://localhost:3000/api/registro
+
+Body JSON:
+{
+  "usuario": "helmer",
+  "contrasena": "MedBay123"
+}
+
+Respuesta correcta:
+201 Created
+
+{
+  "mensaje": "Usuario registrado correctamente."
+}
+
+Validación de usuario duplicado:
+409 Conflict
+
+{
+  "mensaje": "El usuario ya se encuentra registrado."
+}
+
+
+ENDPOINT 2 - INICIO DE SESIÓN
+
+Método:
+POST
+
+URL:
+http://localhost:3000/api/login
+
+Body JSON:
+{
+  "usuario": "helmer",
+  "contrasena": "MedBay123"
+}
+
+Respuesta con credenciales correctas:
+200 OK
+
+{
+  "mensaje": "Autenticación satisfactoria."
+}
+
+Respuesta con credenciales incorrectas:
+401 Unauthorized
+
+{
+  "mensaje": "Error en la autenticación."
+}
